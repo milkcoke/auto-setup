@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"io/fs"
 	"log"
+	"os"
+	"os/exec"
 	"os/user"
 	"path/filepath"
 )
@@ -35,4 +37,16 @@ func GetDownloadDir() string {
 	}
 
 	return downloadDirPath
+}
+
+func OpenDownloadDir() {
+	file, err := os.Open(downloadDirPath)
+	if err != nil {
+		log.Fatalln("Some error exists")
+	}
+
+	// Open download directory in explorer
+	cmd := exec.Command(`explorer`, filepath.Join(file.Name(), "./"))
+	fmt.Println(cmd)
+	cmd.Run()
 }

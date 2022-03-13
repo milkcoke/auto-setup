@@ -1,16 +1,19 @@
 package main
 
 import (
+	"auto-setup/directory_finder"
 	"fmt"
 	"github.com/monaco-io/request"
+	"log"
+	"path/filepath"
 	"sync"
 	"time"
 )
 
 // WINDOWS PATH
-const (
-	DOWNLOAD_PATH = "C:\\Users\\CafeAlle\\Downloads\\"
-)
+//const (
+//	DOWNLOAD_PATH = "C:\\Users\\CafeAlle\\Downloads\\"
+//)
 
 type appInstallerInfo struct {
 	name      string
@@ -24,6 +27,11 @@ func main() {
 	- How to know the file extension in advance?
 	- WTF on alcapture? : "https://advert.estsoft.com/?event=201110311523647%27,%271%27",
 	*/
+	downloadPath := directory_finder.GetDownloadDir()
+	if downloadPath == "" {
+		log.Fatalln("Not found downloads directory")
+	}
+
 	apps := [...]appInstallerInfo{{
 		name: "github_installer.exe",
 		uri:  "https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/Git-2.35.1.2-64-bit.exe",
@@ -50,7 +58,6 @@ func main() {
 
 	for _, appInstaller := range apps {
 
-		fmt.Println(appInstaller.name)
 		go func(app appInstallerInfo) {
 			defer waitGroup.Done()
 
@@ -65,8 +72,7 @@ func main() {
 				fmt.Printf("Failed to donwload : %s\n", app.name)
 			} else {
 				fmt.Println("Success to download : ", app.name)
-				//resp.SaveToFile(DOWNLOAD_PATH + filepath.Join(app.name, app.extension))
-				resp.SaveToFile(DOWNLOAD_PATH + app.name)
+				resp.SaveToFile(filepath.Join(downloadPath, app.name))
 			}
 
 		}(appInstaller)
@@ -77,4 +83,7 @@ func main() {
 
 	endTime := time.Now().Sub(startTime).Seconds()
 	fmt.Println(endTime, "Seconds")
+
+	directory_finder.OpenDownloadDir()
+
 }
