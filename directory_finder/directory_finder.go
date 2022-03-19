@@ -22,6 +22,7 @@ func visitDir(path string, dir fs.DirEntry, err error) error {
 	downloadDirPath = path
 	return nil
 }
+
 func GetDownloadDir() string {
 	currentUser, err := user.Current()
 	homeDir := currentUser.HomeDir
@@ -47,6 +48,9 @@ func OpenDownloadDir() {
 
 	// Open download directory in explorer
 	cmd := exec.Command(`explorer`, filepath.Join(file.Name(), "./"))
-	fmt.Println(cmd)
-	cmd.Run()
+
+	err = cmd.Run()
+	if err != nil {
+		log.Fatalln(err)
+	}
 }

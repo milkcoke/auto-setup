@@ -10,11 +10,6 @@ import (
 	"time"
 )
 
-// WINDOWS PATH
-//const (
-//	DOWNLOAD_PATH = "C:\\Users\\CafeAlle\\Downloads\\"
-//)
-
 type appInstallerInfo struct {
 	name      string
 	uri       string
