@@ -39,6 +39,9 @@ var apps = [...]appInstallerInfo{
 	}, {
 		name: "sourctree-installer.exe",
 		uri:  "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.8.exe",
+	}, {
+		name: "docker-installer.exe",
+		uri:  "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe",
 	},
 }
 
