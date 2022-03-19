@@ -1,4 +1,4 @@
-package directory_finder
+package install_manager
 
 import (
 	"fmt"

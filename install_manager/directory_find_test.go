@@ -1,4 +1,4 @@
-package directory_finder
+package install_manager
 
 import (
 	"fmt"
@@ -21,6 +21,9 @@ func TestFind(t *testing.T) {
 		// Open download directory in explorer
 		cmd := exec.Command(`explorer`, filepath.Join(file.Name(), "./"))
 		fmt.Println(cmd)
-		cmd.Run()
+		err = cmd.Run()
+		if err != nil {
+			t.Error(err)
+		}
 	}
 }
