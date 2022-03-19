@@ -23,7 +23,7 @@ var apps = [...]appInstallerInfo{
 		uri:  "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10970.exe",
 		//extension: "exe",
 	}, {
-		name: "notion_installer.msi",
+		name: "notion_installer.exe",
 		uri:  "https://www.notion.so/desktop/windows/download",
 		//extension: "msi",
 	}, {
