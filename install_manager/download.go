@@ -33,7 +33,13 @@ var apps = [...]appInstallerInfo{
 		url:  "https://github.com/PowerShell/PowerShell/releases/download/v7.2.5/PowerShell-7.2.5-win-x64.msi",
 	}, {
 		name: "sourctree-installer.exe",
-		uri:  "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.8.exe",
+		url:  "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.9.exe",
+	}, {
+		name: "docker-installer.exe",
+		url:  "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe",
+	}, {
+		name: "alcpature-installer.exe",
+		url:  "https://aldn.altools.co.kr/setup/ALCapture304.exe",
 	},
 }
 

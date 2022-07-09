@@ -9,10 +9,6 @@ import (
 
 func main() {
 
-	/* TODO
-	- How to know the file extension in advance?
-	- WTF on alcapture? : "https://advert.estsoft.com/?event=201110311523647%27,%271%27",
-	*/
 	downloadPath := install_manager.GetDownloadDir()
 
 	if downloadPath == "" {
