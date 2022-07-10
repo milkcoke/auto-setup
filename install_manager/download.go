@@ -20,7 +20,7 @@ var apps = [...]appInstallerInfo{
 		name: "jetbrainToolBox_installer.exe",
 		url:  "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.25.12424.exe",
 	}, {
-		name: "notion_installer.msi",
+		name: "notion_installer.exe",
 		url:  "https://www.notion.so/desktop/windows/download",
 	}, {
 		name: "nodejs_installer.msi",
