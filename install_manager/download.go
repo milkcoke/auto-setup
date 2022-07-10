@@ -40,6 +40,9 @@ var apps = [...]appInstallerInfo{
 	}, {
 		name: "alcpature-installer.exe",
 		url:  "https://aldn.altools.co.kr/setup/ALCapture304.exe",
+	}, {
+		name: "SCoreDream_fonts.zip",
+		url:  "https://s-core.co.kr/wp-content/uploads/2020/03/S-Core_Dream_OTF.zip",
 	},
 }
 
