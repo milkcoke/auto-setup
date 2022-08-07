@@ -15,10 +15,10 @@ type appInstallerInfo struct {
 var apps = [...]appInstallerInfo{
 	{
 		name: "github_installer.exe",
-		url:  "https://github.com/git-for-windows/git/releases/download/v2.37.0.windows.1/Git-2.37.0-64-bit.exe",
+		url:  "https://github.com/git-for-windows/git/releases/download/v2.37.1.windows.1/Git-2.37.1-64-bit.exe",
 	}, {
 		name: "jetbrainToolBox_installer.exe",
-		url:  "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.25.12424.exe",
+		url:  "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.25.12627.exe",
 	}, {
 		name: "notion_installer.exe",
 		url:  "https://www.notion.so/desktop/windows/download",
