@@ -27,7 +27,7 @@ var apps = [...]appInstallerInfo{
 		url:  "https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi",
 	}, {
 		name: "go-sdk-installer.msi",
-		url:  "https://go.dev/dl/go1.18.3.windows-amd64.msi",
+		url:  "https://go.dev/dl/go1.19.windows-amd64.msi",
 	}, {
 		name: "powershell-installer.msi",
 		url:  "https://github.com/PowerShell/PowerShell/releases/download/v7.2.5/PowerShell-7.2.5-win-x64.msi",
