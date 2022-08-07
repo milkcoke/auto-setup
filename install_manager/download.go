@@ -29,6 +29,9 @@ var apps = [...]appInstallerInfo{
 		name: "go-sdk-installer.msi",
 		url:  "https://go.dev/dl/go1.19.windows-amd64.msi",
 	}, {
+		name: "adobe-reader-installer.exe",
+		url:  "https://admdownload.adobe.com/rdcm/installers/live/readerdc64.exe",
+	}, {
 		name: "powershell-installer.msi",
 		url:  "https://github.com/PowerShell/PowerShell/releases/download/v7.2.5/PowerShell-7.2.5-win-x64.msi",
 	}, {
