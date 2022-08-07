@@ -1,6 +1,6 @@
 module auto-setup
 
-go 1.18
+go 1.19
 
 require github.com/monaco-io/request v1.0.15
 
