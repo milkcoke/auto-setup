@@ -9,7 +9,7 @@ Stop it! don't go to the website.
 
 ## Quick start
 1. Install the 
-[Download auto-setup.exe](https://github.com/milkcoke/auto-setup/releases/download/v1.1.2/auto-setup.exe)
+[Download auto-setup.exe](https://github.com/milkcoke/auto-setup/releases/download/v1.1.3/auto-setup.exe)
 2. Run it!
 
 > ⚠️ Only support _Windows_ at the current version
